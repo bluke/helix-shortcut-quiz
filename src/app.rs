@@ -344,7 +344,7 @@ fn handle_keypress(e: KeyboardEvent) -> Option<Msg> {
         Some(Msg::Escape)
     } else if key == "Enter" {
         Some(Msg::Forward(ForwardType::Success))
-    } else if key == "CapsLock" || key == "Shift" {
+    } else if key == "CapsLock" || key == "Shift" || key == "AltGraph" {
         None
     } else {
         Some(Msg::Key(key))
